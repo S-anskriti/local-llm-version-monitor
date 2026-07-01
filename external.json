@@ -1,0 +1,12 @@
+{
+    "Chrome": {
+        "latest": "137.0.2"
+    },
+
+    "VS Code": {
+        "latest": "1.99.0"
+    },
+     "Node.js": {
+        "latest": "22.6.1"
+    }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App Version Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Installed Applications</h1>
+
+    <div class="app-list">
+        {% for app in apps %}
+        <div class="app-card {% if app.update %}outdated{% else %}updated{% endif %}">
+            <h3>{{ app.name }}</h3>
+            <p>Installed: {{ app.installed }}</p>
+
+            {% if app.update %}
+                <p class="warning">Update Available: {{ app.latest }}</p>
+            {% else %}
+                <p class="ok">✔ Up to date</p>
+            {% endif %}
+
+            <div class="tooltip">
+                {{ app.explanation }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
