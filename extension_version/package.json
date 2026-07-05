@@ -1,0 +1,20 @@
+{
+  "name": "version-monitor-extension",
+  "displayName": "Version Monitor Extension",
+  "description": "An internship demo project tracking application versions with local AI suggestions.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {},
+  "devDependencies": {
+    "@types/vscode": "^1.85.0"
+  }
+}
